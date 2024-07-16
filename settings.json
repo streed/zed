@@ -1,0 +1,78 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "auto_update_extensions": {
+    "ruby": true
+  },
+  "assistant": {
+    "version": "1",
+    "default_open_ai_model": "gpt-4o",
+    "provider": {
+      "name": "openai",
+      "default_model": "gpt-4o",
+      "available_models": []
+    }
+  },
+  "theme": "Catbox",
+  "ui_font_size": 16,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 16,
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "inline_completions": {
+    "disabled_globs": [".env"]
+  },
+  // disable cursor blink
+  "cursor_blink": false,
+  // use relative line numbers
+  "relative_line_numbers": true,
+  // hide the scroll bar
+  "scrollbar": {
+    "show": "never"
+  },
+  // allow cursor to reach edges of screen
+  "vertical_scroll_margin": 0,
+  "gutter": {
+    // disable line numbers completely:
+    "line_numbers": true
+  },
+  "vim_mode": true,
+  "show_copilot_suggestions": true,
+  "hover_popover_enabled": true,
+  "git": {
+    "enabled": true,
+    "autoFetch": true,
+    "autoFetchInterval": 300,
+    "autoFetchOnFocus": true,
+    "autoFetchOnWindowChange": true,
+    "autoFetchOnBuild": true,
+    "git_status": true,
+    "autoFetchOnBuildEvents": ["build", "run", "debug"],
+    "autoFetchOnBuildEventsDelay": 1500,
+    "autoFetchOnBuildDelay": 1500,
+    "git_gutter": "tracked_files"
+  },
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "solargraph"]
+    }
+  },
+  "lsp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "diagnostics": false
+        }
+      }
+    }
+  }
+}
