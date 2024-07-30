@@ -1,0 +1,6 @@
+[
+  {
+    "label": "Rubocop Current File",
+    "command": "bundle exec rubocop $ZED_FILE"
+  }
+]

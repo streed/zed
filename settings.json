@@ -63,7 +63,7 @@
   },
   "languages": {
     "Ruby": {
-      "language_servers": ["ruby-lsp", "solargraph"]
+      "language_servers": ["ruby-lsp", "!solargraph"]
     }
   },
   "lsp": {
